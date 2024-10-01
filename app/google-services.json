@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399787163182",
+    "project_id": "criticine-4e20c",
+    "storage_bucket": "criticine-4e20c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399787163182:android:ee10c6584b646ed09f29bf",
+        "android_client_info": {
+          "package_name": "com.bilalmirza.criticine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6a7iIHmcwFTirfPMCVFLkm8dV5nRvNc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".activities.mainActivity.fragments.bookmarks.BookmarksFragment">
+
+    <TextView
+        android:id="@+id/bookmarkTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_side_margin"
+        android:layout_marginTop="@dimen/app_side_margin"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Saved"
+        android:textColor="@color/white"
+        android:textSize="36dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/savedRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="15dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_search" />
+
+</LinearLayout>

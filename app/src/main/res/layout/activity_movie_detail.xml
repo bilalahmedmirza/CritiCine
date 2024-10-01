@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        app:expanded="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".activities.movieDetail.MovieDetailActivity">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/detailFilmBackgroundIV"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/film_poster" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:background="@drawable/grad_movie_detail_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/filmTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:text="Film Name"
+                                android:textColor="@color/white"
+                                android:textFontWeight="600"
+                                android:textSize="21sp" />
+
+                            <TextView
+                                android:id="@+id/flimDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:text="1 hour 39 minute(s)"
+                                android:textColor="@color/white"
+                                android:textFontWeight="400"
+                                android:textSize="13sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recylerViewRV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:itemCount="5"
+                                tools:listitem="@layout/item_genre" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/ic_rating_star" />
+
+                                <TextView
+                                    android:id="@+id/filmRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/open_sans_regular"
+                                    android:text="7.9/10"
+                                    android:textColor="@color/white"
+                                    android:textFontWeight="400"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/saveFilmBtn"
+                                style="@style/MyCustomButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="0dp"
+                                android:layout_marginTop="20dp"
+                                android:padding="10dp"
+                                android:text="Save to Bookmarks"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/horizontalMovieScrollIV"
+                            android:layout_width="140dp"
+                            android:layout_height="170dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/movie_poster"
+                            app:riv_corner_radius="12dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="Sinopsis"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/overviewTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/sampleText"
+                    android:textColor="@color/white"
+                    android:textFontWeight="400"
+                    android:textSize="13.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:id="@+id/addReviewBTN"
+            style="@style/MyCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Add a Review"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/FontTabLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/backgroundColor"
+            app:tabIndicatorColor="@color/bottomNavBarSelected"
+            app:tabRippleColor="@color/bottomNavBarSelected"
+            app:tabTextColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trailer" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Like This" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/movieInformationViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

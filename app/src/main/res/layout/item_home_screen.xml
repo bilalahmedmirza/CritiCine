@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.makeramen.roundedimageview.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/horizontalMovieScrollIV"
+    android:layout_width="160dp"
+    android:layout_height="220dp"
+    android:layout_marginHorizontal="5dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/moview_poster1"
+    app:riv_corner_radius="12dp" />

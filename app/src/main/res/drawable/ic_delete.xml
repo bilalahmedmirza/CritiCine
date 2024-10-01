@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="25dp"
+    android:height="25dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+
+    <path
+        android:fillColor="@color/bottomNavBarSelected"
+        android:pathData="M20.222,26H9.778c-1.014,0 -1.868,-0.759 -1.986,-1.766L6,9h18l-1.792,15.234C22.089,25.241 21.236,26 20.222,26z" />
+
+    <path
+        android:fillColor="@color/bottomNavBarSelected"
+        android:pathData="M8.5,5L21.5,5"
+        android:strokeWidth="2"
+        android:strokeColor="@color/bottomNavBarSelected"
+        android:strokeLineCap="round" />
+
+    <path
+        android:fillColor="@color/bottomNavBarSelected"
+        android:pathData="M15,3.5L15,5.5"
+        android:strokeWidth="2"
+        android:strokeColor="@color/bottomNavBarSelected"
+        android:strokeLineCap="round" />
+
+    <path
+        android:fillColor="@color/bottomNavBarSelected"
+        android:pathData="M6,6L24,6"
+        android:strokeWidth="2"
+        android:strokeColor="@color/bottomNavBarSelected"
+        android:strokeLineCap="round" />
+
+</vector>
