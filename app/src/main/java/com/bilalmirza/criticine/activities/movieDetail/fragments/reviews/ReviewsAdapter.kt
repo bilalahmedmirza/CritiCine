@@ -25,7 +25,7 @@ class ReviewsAdapter(
         )
     }
 
-    @SuppressLint("ResourceAsColor")
+    @SuppressLint("ResourceAsColor", "SetTextI18n")
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = filmReviews[position]
 

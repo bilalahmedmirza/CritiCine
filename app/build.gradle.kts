@@ -78,4 +78,5 @@ dependencies {
     implementation(libs.googleid)
     //  coroutines
     implementation(libs.kotlinx.coroutines.android)
+//    implementation("com.google.firebase:firebase-appdistribution:16.0.0-beta14")
 }

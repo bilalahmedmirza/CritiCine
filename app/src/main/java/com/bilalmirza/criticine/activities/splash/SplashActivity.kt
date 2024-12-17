@@ -21,8 +21,8 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivitySplashBinding.inflate(layoutInflater)
         setTheme(R.style.Theme_CritiCine)
+        binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //  changing color of status bar text programmatically

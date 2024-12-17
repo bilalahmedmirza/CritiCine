@@ -5,6 +5,8 @@ compiler = "4.12.0"
 converterGson = "2.9.0"
 credentials = "1.2.2"
 facebookLogin = "16.0.0"
+firebaseAppdistributionApi = "16.0.0-beta14"
+firebaseAppdistributionApiKtx = "16.0.0-beta14"
 firebaseBom = "33.1.1"
 firebaseBomVersion = "33.1.0"
 flexbox = "3.0.0"
@@ -30,6 +32,7 @@ retrofit = "2.9.0"
 roundedimageview = "2.3.0"
 scrollingpagerindicator = "x.x.x"
 shimmer = "0.5.0"
+junitJunit = "4.12"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -40,6 +43,8 @@ compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compi
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 facebook-login = { module = "com.facebook.android:facebook-login", version.ref = "facebookLogin" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-appdistribution-api = { module = "com.google.firebase:firebase-appdistribution-api", version.ref = "firebaseAppdistributionApi" }
+firebase-appdistribution-api-ktx = { module = "com.google.firebase:firebase-appdistribution-api-ktx", version.ref = "firebaseAppdistributionApiKtx" }
 firebase-auth = { module = "com.google.firebase:firebase-auth" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-bom-v3310 = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
@@ -67,6 +72,7 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "roundedimageview" }
 scrollingpagerindicator = { module = "ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator", version.ref = "scrollingpagerindicator" }
 shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

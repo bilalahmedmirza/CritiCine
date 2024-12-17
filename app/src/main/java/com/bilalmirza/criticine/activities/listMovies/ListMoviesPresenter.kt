@@ -10,7 +10,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ListMoviesPresenter(private val view: ListMoviesView) {
-
     fun getMostPopularMovies(context: Context, page: Int) {
         RetrofitInstance.api.getMostPopularMovies(page)
             .enqueue(object : Callback<MovieShowResponse> {
@@ -21,7 +20,9 @@ class ListMoviesPresenter(private val view: ListMoviesView) {
                         val movies = response.body()
                         if (movies != null) {
                             Log.d("getMostPopularMovies", "Great Success!")
-                            view.listPopularMovies(movies.results!!, movies.page!!, movies.totalPages!!)
+                            view.listPopularMovies(
+                                movies.results!!, movies.page!!, movies.totalPages!!
+                            )
                         }
                     }
                 }

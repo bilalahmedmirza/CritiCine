@@ -42,6 +42,8 @@ class ForgotPasswordActivity : AppCompatActivity(), ForgotPasswordActivityView {
         }
         binding.forgotPasswordBtn.setOnClickListener {
             val email = binding.forgotEmailET.text.toString()
+            binding.forgotEmailLayout.helperText = ""
+
             myPresenter.resetPassword(email)
         }
     }
@@ -54,5 +56,12 @@ class ForgotPasswordActivity : AppCompatActivity(), ForgotPasswordActivityView {
 
     override fun onFail(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onError(msg: String, type: Int) {
+        when (type) {
+            1 -> binding.forgotEmailLayout.helperText = msg
+            else -> binding.forgotEmailLayout.helperText = msg
+        }
     }
 }

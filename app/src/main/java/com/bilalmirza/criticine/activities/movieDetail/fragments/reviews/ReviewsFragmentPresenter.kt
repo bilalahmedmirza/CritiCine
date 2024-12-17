@@ -72,7 +72,6 @@ class ReviewsFragmentPresenter(private val view: ReviewsFragmentView) {
         }
     }
 
-
     fun analyzeSentiments(
         context: Context, review: ArrayList<ReviewsResult>, currentPage: Int, lastPage: Int
     ) {
